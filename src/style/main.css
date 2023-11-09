@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
 img {
   width: 40px;
   height: 40px;
@@ -10,19 +17,37 @@ img {
 a {
   color: #fff;
   padding: 0 1em;
+  text-decoration: none;
 }
 
-.headers-conteiner {
+.conteiner-main {
+  height: 100%;
+}
+.conteiner-main .headers-conteiner {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background-color: #000;
+  height: 100%;
+}
+.conteiner-main .conteiner-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background-color: #2D46B9;
 }
 
 .nav-header {
   display: flex;
   flex-direction: row;
   margin: 5px;
+}
+.nav-header p {
+  color: #fff;
+  position: relative;
+  bottom: 17px;
+  opacity: 10%;
 }
 
 .logo {
@@ -33,6 +58,34 @@ a {
   color: #fff;
   font-size: 1em;
   margin-top: 20px;
+}
+
+.conteiner-title-and-subtitle {
+  text-align: center;
+}
+.conteiner-title-and-subtitle span h1 {
+  font-size: 8em;
+  color: #1ED860;
+}
+.conteiner-title-and-subtitle p {
+  font-size: 15px;
+  color: #1ED860;
+}
+.conteiner-title-and-subtitle button {
+  padding: 15px;
+  color: #2D46B9;
+  background-color: #1ED860;
+  margin: 10px;
+  border-radius: 20px 20px 20px 20px;
+  border: none;
+}
+
+.form {
+  border: #1ED860 1px solid;
+  width: 150px;
+  height: 150px;
+  background-color: #1ED860;
+  border-radius: 0 200% 0% 0;
 }
 
 /*# sourceMappingURL=main.css.map */

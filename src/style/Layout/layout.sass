@@ -1,6 +1,13 @@
 @use "../Base/__utils.sass"
-.headers-conteiner
-    @include _utils.displaysRow()
-    justify-content: space-between
-    background-color: #000
-    
+.conteiner-main
+    height: 100%
+    .headers-conteiner
+        @include _utils.displaysRow()
+        justify-content: space-between
+        background-color: #000
+        height: 100%
+    .conteiner-center
+        @include _utils.displaysCollumn() 
+        justify-content: center
+        align-content: center 
+        background-color: #2D46B9  
