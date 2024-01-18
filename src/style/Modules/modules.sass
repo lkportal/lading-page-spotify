@@ -2,11 +2,16 @@
 .nav-header
     @include _utils.displaysRow()
     margin: 5px
+    margin-top: 15px
+    nav
+        display: flex 
     p 
         color: #fff
         position: relative
         bottom: 17px
         opacity: 10%
+   
+        
 .logo
     @include _utils.displaysRow()
     h1
@@ -14,13 +19,18 @@
        font-size: 1em
        margin-top: 20px    
 .conteiner-title-and-subtitle
+    margin-top: 2rem
     text-align: center 
     span
+        display: flex
+        flex-direction: column
         h1
             font-size: 8em
             color: #1ED860
     p
-        font-size: 15px
+        margin-top: 20px 
+        margin-bottom: 20px   
+        font-size: 1em
         color: #1ED860
     button
         padding: 15px
@@ -29,12 +39,23 @@
         margin: 10px
         border-radius: 20px 20px 20px 20px 
         border: none
+        &:hover
+            cursor: pointer
+            opacity: 75%
 .form
     border:  #1ED860 1px solid 
     width: 150px
     height: 150px
     background-color: #1ED860 
     border-radius: 0 200% 0% 0       
+.conteiner-footer
+    display: flex
+    justify-content: center
+    height: 100%
+    .text
+        font-size: 10px
+        color: #fff
+        padding: 1rem
 
     
         

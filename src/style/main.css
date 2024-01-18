@@ -1,8 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
-html, body {
+@media only screen and (max-width: 520px) {
+  .headers-conteiner {
+    font-size: 10px;
+  }
+  .conteiner-center {
+    display: flex;
+    height: 100%;
+  }
+  .conteiner-center .conteiner-title-and-subtitle {
+    margin-top: 10em;
+  }
+  .conteiner-center .conteiner-title-and-subtitle span h1 {
+    font-size: 50px;
+  }
+  .conteiner-center .conteiner-title-and-subtitle p {
+    font-size: 1rem;
+  }
+  .conteiner-center .conteiner-title-and-subtitle .login {
+    display: flex;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .nav-header .nav {
+    display: none;
+  }
+}
+* {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
+}
+
+html {
+  height: 100%;
 }
 
 img {
@@ -37,11 +67,18 @@ a {
   align-content: center;
   background-color: #2D46B9;
 }
+.conteiner-main .footer-layout {
+  background-color: #000;
+}
 
 .nav-header {
   display: flex;
   flex-direction: row;
   margin: 5px;
+  margin-top: 15px;
+}
+.nav-header nav {
+  display: flex;
 }
 .nav-header p {
   color: #fff;
@@ -61,14 +98,21 @@ a {
 }
 
 .conteiner-title-and-subtitle {
+  margin-top: 2rem;
   text-align: center;
+}
+.conteiner-title-and-subtitle span {
+  display: flex;
+  flex-direction: column;
 }
 .conteiner-title-and-subtitle span h1 {
   font-size: 8em;
   color: #1ED860;
 }
 .conteiner-title-and-subtitle p {
-  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1em;
   color: #1ED860;
 }
 .conteiner-title-and-subtitle button {
@@ -79,6 +123,10 @@ a {
   border-radius: 20px 20px 20px 20px;
   border: none;
 }
+.conteiner-title-and-subtitle button:hover {
+  cursor: pointer;
+  opacity: 75%;
+}
 
 .form {
   border: #1ED860 1px solid;
@@ -86,6 +134,17 @@ a {
   height: 150px;
   background-color: #1ED860;
   border-radius: 0 200% 0% 0;
+}
+
+.conteiner-footer {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+.conteiner-footer .text {
+  font-size: 10px;
+  color: #fff;
+  padding: 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */
